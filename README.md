@@ -58,13 +58,10 @@ This game uses:
 
 ## 💡 Future Improvements
 
-    🎚 Difficulty levels
-
-    📱 Mobile responsiveness
-
-    🔊 Sound effects
-
-    💾 Track high scores using local storage
+- 🎚 Difficulty levels
+- 📱 Mobile responsiveness
+- 🔊 Sound effects
+- 💾 Track high scores using local storage
 
 ## 📄 License
 
