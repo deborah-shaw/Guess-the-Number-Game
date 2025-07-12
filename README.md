@@ -56,3 +56,16 @@ This game uses:
   ```js
   let restBtn = document.querySelector("resetBtn");
 
+💡 Future Improvements
+
+    🎚 Difficulty levels
+
+    📱 Mobile responsiveness
+
+    🔊 Sound effects
+
+    💾 Track high scores using local storage
+
+📄 License
+
+This project is licensed under the MIT License.
