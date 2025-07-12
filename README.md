@@ -13,7 +13,7 @@ A fun, interactive browser game where players try to guess a randomly chosen num
 
 ## 🚀 Live Demo
 
-_You can [host this on GitHub Pages](https://pages.github.com/) or your favorite static site service and add a link here._
+_You can [Try it yourself](https://deborah-shaw.github.io/Guess-the-Number/](https://deborah-shaw.github.io/Guess-the-Number/)._
 
 ## 🗂️ Project Structure
 
