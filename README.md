@@ -56,7 +56,7 @@ This game uses:
   ```js
   let restBtn = document.querySelector("resetBtn");
 
-💡 Future Improvements
+## 💡 Future Improvements
 
     🎚 Difficulty levels
 
@@ -66,6 +66,6 @@ This game uses:
 
     💾 Track high scores using local storage
 
-📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
