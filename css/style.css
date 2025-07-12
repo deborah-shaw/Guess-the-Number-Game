@@ -1,0 +1,97 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  text-align: center;
+  background-image: url("../img/numbers.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header, div {
+  background-color: pink;
+}
+
+div {
+  padding: 5px;
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Rubik Distressed", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Shantell Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-variation-settings:
+    "BNCE" 0,
+    "INFM" 0,
+    "SPAC" 0;
+}
+
+#guessBtn, #resetBtn, div {
+  font-family: "DynaPuff", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+#guessBtn, #resetBtn, #restBtn {
+  background-color: #4CAF50;    /* Green background */
+  color: white;    /* White text */
+  padding: 10px 20px;    /* Padding */
+  text-align: center;    /* Center the text */
+  text-decoration: none;    /* Remove underline */
+  display: inline-block;    /* Display inline */
+  font-size: 18px;    /* Font size */
+  margin: 4px 2px;    /* Margin */
+  cursor: pointer;    /* Pointer cursor on hover */
+  border-radius: 12px;    /* Rounded corners */
+}
+
+#guessBtn:hover, #resetBtn:hover {
+  transition: .5s;    /*transition effect*/
+  color: #4CAF50;    /* Text color on hover */
+  background-color: white;    /* Background color on hover */
+}
+
+#seven {
+  color: green;
+}
+
+#guesses, #attemptsLeft {
+  color: blue;
+  font-size: 18px;
+}
+
+#wins {
+  color: green;
+  font-size: 24px;
+}
+
+#losses {
+  color: red;
+  font-size: 24px;
+}
+
+#score {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#score div {
+  font-size: 20px;
+  padding: 10px 40px;
+}

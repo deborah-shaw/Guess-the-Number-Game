@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Guess a Number </title>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <h1>Guess the Number!</h1>
+        <h2>Guess a number between 1 and 99 <br> in <label id="seven">seven</label> attempts!</h2>
+    </header>
+
+    <br>
+
+    <div id="main">
+
+        <label id="enterGuess">
+            Enter a guess:
+        </label>
+
+        <input type="text" id="playerGuess" size="10">
+        <button id="guessBtn"> Is this correct? </button>
+        <button id="resetBtn"> Challenge Again </button>
+
+        <div id="feedback"></div>
+
+        <div>
+            Previous Guesses: <span id="guesses"></span>
+        </div>
+
+        <div>
+            You have <span id="attemptsLeft"></span> attempts left
+        </div>
+
+        <div id="score">
+            <div>
+                You won <span id="wins"></span> times
+            </div>
+
+            <div>
+                You lost <span id="losses"></span> times
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
