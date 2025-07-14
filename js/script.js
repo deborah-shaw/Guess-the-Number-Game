@@ -45,10 +45,10 @@ function initializeGame() {
 function checkGuess() {
   let feedback = document.querySelector("#feedback")
   feedback.textContent = "";
-  let guess = document.querySelector("#playerGuess").value;
+  let guess = Number(document.querySelector("#playerGuess").value);
   console.log("Player guess: " + guess);
-  if(guess < 1 || guess > 99) {
-    feedback.textContent = "Enter a number between 1 and 99";
+  if(!Number.isInteger(guess) || guess < 1 || guess > 99) {
+    feedback.textContent = "Enter a integer number between 1 and 99";
     feedback.style.color = "red";
     playerGuess.focus();    //adding focus to textbox
     playerGuess.value = "";    //clearing the textbox
