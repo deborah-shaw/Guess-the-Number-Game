@@ -47,8 +47,8 @@ function checkGuess() {
   feedback.textContent = "";
   let guess = Number(document.querySelector("#playerGuess").value);
   console.log("Player guess: " + guess);
-  if(isNaN(guess) || !Number.isInteger(guess) || guess < 1 || guess > 99) {
-    feedback.textContent = "Enter a integer number between 1 and 99";
+  if (!Number.isInteger(guess) || guess < 1 || guess > 99) {
+    feedback.textContent = "Enter an integer number between 1 and 99";
     feedback.style.color = "red";
     playerGuess.focus();    //adding focus to textbox
     playerGuess.value = "";    //clearing the textbox
@@ -62,7 +62,7 @@ function checkGuess() {
   if (guess == randomNumber) {
     wins++;
     document.querySelector("#wins").textContent = wins;
-    feedback.textContent = "You guessed it! You Won!" + "The number was " + randomNumber;
+    feedback.textContent = "You guessed it! You Won! " + "The number was " + randomNumber;
     feedback.style.color = "darkgreen";
     gameOver();
   } else {
@@ -85,7 +85,7 @@ function checkGuess() {
 function gameOver() {
   let guessBtn = document.querySelector("#guessBtn");
   guessBtn.style.display = "none";  //hides Guess button
-  let restBtn = document.querySelector("resetBtn");
+  let resetBtn = document.querySelector("#resetBtn");
   resetBtn.style.display = "inline";  //displays Reset button
   let enterGuess = document.querySelector("#enterGuess");
   enterGuess.style.display = "none";  //hides "Enter a guess" text
