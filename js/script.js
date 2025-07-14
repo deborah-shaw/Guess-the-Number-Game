@@ -47,7 +47,7 @@ function checkGuess() {
   feedback.textContent = "";
   let guess = Number(document.querySelector("#playerGuess").value);
   console.log("Player guess: " + guess);
-  if(!Number.isInteger(guess) || guess < 1 || guess > 99) {
+  if(isNaN(guess) || !Number.isInteger(guess) || guess < 1 || guess > 99) {
     feedback.textContent = "Enter a integer number between 1 and 99";
     feedback.style.color = "red";
     playerGuess.focus();    //adding focus to textbox
