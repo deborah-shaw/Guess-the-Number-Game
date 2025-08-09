@@ -53,7 +53,7 @@ This game uses:
 
 - Minor bug in `gameOver()`:
   ```js
-  let restBtn = document.querySelector("resetBtn");
+  let resetBtn = document.querySelector("resetBtn");
 
 ## 💡 Future Improvements
 
