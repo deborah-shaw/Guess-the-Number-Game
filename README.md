@@ -7,6 +7,7 @@ A fun, interactive browser game where players try to guess a randomly chosen num
 - 🎲 Random number generated each round
 - 🔢 Up to 7 attempts per game
 - 📉 Feedback after each guess: _"Too High"_ or _"Too Low"_
+- 🔊 Sound effects for win, loss, and incorrect guesses
 - 🏆 Tracks your **wins** and **losses**
 - 🎨 Clean, responsive UI with playful fonts and background
 - 🔄 Simple reset functionality to start a new round
@@ -23,6 +24,10 @@ A fun, interactive browser game where players try to guess a randomly chosen num
  ┃ ┗ 📄 style.css           # 🎨 All styling for the game's layout and UI  
  ┣ 📁 js/  
  ┃ ┗ 📄 script.js           # 🧠 Main JavaScript file handling game logic  
+ ┣ 📁 sounds/
+ ┃ ┣ 📄 win.wav             # 🔊 Win sound
+ ┃ ┣ 📄 lose.wav            # 🔊 Lose wound
+ ┃ ┗ 📄 wrong.wav           # 🔊 Incorrect guess sound
  ┣ 📁 img/  
  ┃ ┗ 📄 numbers.jpg         # 🖼️ Background image of numbers  
  ┣ 📄 index.html            # 🏠 Main HTML file for the game interface  
@@ -48,6 +53,13 @@ This game uses:
 - `Math.random()` to generate a random number between 1 and 99
 - DOM event listeners to handle button clicks and input
 - A simple ensemble of HTML elements updated dynamically to reflect game state
+
+## 🔊 Sound Effects
+
+This game includes interactive audio feedback to enhance the player experience:
+- ✅ Win sound plays when the correct number is guessed
+- ❌ Lose sound plays when all attempts are used
+- 🔼🔽 Wrong guess sound plays for high/low guesses
 
 ## 📱 Compatibility
 
