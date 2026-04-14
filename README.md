@@ -13,7 +13,7 @@ A fun, interactive browser game where players try to guess a randomly chosen num
 
 ## 🚀 Live Demo
 
-You can [Try it yourself](https://deborah-shaw.github.io/Guess-the-Number-Game/).
+👉 Play it [here](https://deborah-shaw.github.io/Guess-the-Number-Game/).
 
 ## 🗂️ Project Structure
 
@@ -49,17 +49,21 @@ This game uses:
 - DOM event listeners to handle button clicks and input
 - A simple ensemble of HTML elements updated dynamically to reflect game state
 
-## 🐛 Known Issues
+## 📱 Compatibility
 
-- Minor bug in `gameOver()`:
-  ```js
-  let resetBtn = document.querySelector("resetBtn");
+Works on all modern browsers:
+
+- Chrome
+- Firefox
+- Edge
+- Safari
 
 ## 💡 Future Improvements
 
-- 🎚 Difficulty levels
+- 🎚 Difficulty levels (Easy / Medium / Hard)
 - 📱 Mobile responsiveness
-- 🔊 Sound effects
+- 🔊 Sound effects for feedback
+- ⏱ Add a timer mode
 - 💾 Track high scores using local storage
 
 ## 📄 License
