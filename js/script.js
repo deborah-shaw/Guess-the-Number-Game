@@ -7,6 +7,14 @@ let randomNumber;
 let attempts = 0;
 let wins = 0;
 let losses = 0;
+const winSound = new Audio("sounds/win.wav");
+const loseSound = new Audio("sounds/lose.wav");
+const wrongSound = new Audio("sounds/wrong.wav");
+
+// Set volumes
+winSound.volume = 0.4;
+loseSound.volume = 0.4;
+wrongSound.volume = 0.4;
 
 initializeGame();
 
@@ -64,6 +72,7 @@ function checkGuess() {
     document.querySelector("#wins").textContent = wins;
     feedback.textContent = "You guessed it! You Won! " + "The number was " + randomNumber;
     feedback.style.color = "darkgreen";
+    winSound.play();
     gameOver();
   } else {
     if (attempts == 7) {
@@ -71,11 +80,14 @@ function checkGuess() {
       document.querySelector("#losses").textContent = losses;
       feedback.textContent = "Sorry, you lost! " + "The number was " + randomNumber;
       feedback.style.color = "red";
+      loseSound.play();
       gameOver();
     } else if (guess > randomNumber) {
       feedback.textContent = "Guess was HIGH";
+      wrongSound.play();
     } else {
       feedback.textContent = "Guess was LOW";
+      wrongSound.play();
     }
   }
   playerGuess.focus();    // adding focus to textbox
