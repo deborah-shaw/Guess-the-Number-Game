@@ -1,8 +1,8 @@
-//Event Listeners
+// Event Listeners
 document.querySelector("#guessBtn").addEventListener("click", checkGuess);
 document.querySelector("#resetBtn").addEventListener("click", initializeGame);
 
-//Global variables
+// Global variables
 let randomNumber;
 let attempts = 0;
 let wins = 0;
@@ -15,29 +15,29 @@ function initializeGame() {
   console.log("randomNumber: " + randomNumber);
   attempts = 0;
 
-  //hiding the Reset button
+  // Hiding the Reset button
   document.querySelector("#resetBtn").style.display = "none";
 
-  //showing the Guess button
+  // Showing the Guess button
   document.querySelector("#guessBtn").style.display = "inline";
 
   document.querySelector("#playerGuess").style.display = "inline";
   document.querySelector("#enterGuess").style.display = "inline";
 
   let playerGuess = document.querySelector("#playerGuess");
-  playerGuess.focus();    //adding focus to textbox
-  playerGuess.value = "";    //clearing the textbox
+  playerGuess.focus();    // adding focus to textbox
+  playerGuess.value = "";    // clearing the textbox
 
   let feedback = document.querySelector("#feedback");
-  feedback.textContent = "";    //clearing the feedback
+  feedback.textContent = "";    // clearing the feedback
 
-  //clearing previous guesses
+  // Clearing previous guesses
   document.querySelector("#guesses").textContent = "";
 
-  //displaying how many attempts left
+  // Displaying how many attempts left
   document.querySelector("#attemptsLeft").textContent = 7 - attempts;
 
-  //displaying the wins and losses
+  // Displaying the wins and losses
   document.querySelector("#wins").textContent = wins;
   document.querySelector("#losses").textContent = losses;
 }
@@ -50,15 +50,15 @@ function checkGuess() {
   if (isNaN(guess) || !Number.isInteger(guess) || guess < 1 || guess > 99) {
     feedback.textContent = "Enter an integer number between 1 and 99";
     feedback.style.color = "red";
-    playerGuess.focus();    //adding focus to textbox
-    playerGuess.value = "";    //clearing the textbox
+    playerGuess.focus();    // adding focus to textbox
+    playerGuess.value = "";    // clearing the textbox
     return;
   }
   attempts++;
   console.log("Attempts: " + attempts);
   feedback.style.color = "purple";
   document.querySelector("#guesses").textContent += guess + ", ";
-  document.querySelector("#attemptsLeft").textContent = 7 - attempts;    //reduce 1 remaining attempt for every guess
+  document.querySelector("#attemptsLeft").textContent = 7 - attempts;    // reduce 1 remaining attempt for every guess
   if (guess == randomNumber) {
     wins++;
     document.querySelector("#wins").textContent = wins;
@@ -78,17 +78,17 @@ function checkGuess() {
       feedback.textContent = "Guess was LOW";
     }
   }
-  playerGuess.focus();    //adding focus to textbox
-  playerGuess.value = "";    //clearing the textbox
+  playerGuess.focus();    // adding focus to textbox
+  playerGuess.value = "";    // clearing the textbox
 }
 
 function gameOver() {
   let guessBtn = document.querySelector("#guessBtn");
-  guessBtn.style.display = "none";  //hides Guess button
+  guessBtn.style.display = "none";  // hides Guess button
   let resetBtn = document.querySelector("#resetBtn");
-  resetBtn.style.display = "inline";  //displays Reset button
+  resetBtn.style.display = "inline";  // displays Reset button
   let enterGuess = document.querySelector("#enterGuess");
-  enterGuess.style.display = "none";  //hides "Enter a guess" text
+  enterGuess.style.display = "none";  // hides "Enter a guess" text
   let playerGuess = document.querySelector("#playerGuess");
-  playerGuess.style.display = "none";  //hides playerGuess input textbox
+  playerGuess.style.display = "none";  // hides playerGuess input textbox
 }
