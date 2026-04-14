@@ -18,7 +18,7 @@ function initializeGame() {
   //hiding the Reset button
   document.querySelector("#resetBtn").style.display = "none";
 
-  //showing the GUess button
+  //showing the Guess button
   document.querySelector("#guessBtn").style.display = "inline";
 
   document.querySelector("#playerGuess").style.display = "inline";
@@ -69,7 +69,7 @@ function checkGuess() {
     if (attempts == 7) {
       losses++;
       document.querySelector("#losses").textContent = losses;
-      feedback.textContent = "Sorry, you lost!" + " The number was " + randomNumber;
+      feedback.textContent = "Sorry, you lost! " + "The number was " + randomNumber;
       feedback.style.color = "red";
       gameOver();
     } else if (guess > randomNumber) {
@@ -90,5 +90,5 @@ function gameOver() {
   let enterGuess = document.querySelector("#enterGuess");
   enterGuess.style.display = "none";  //hides "Enter a guess" text
   let playerGuess = document.querySelector("#playerGuess");
-  playerGuess.style.display = "none";  //hids playerGuess input textbox
+  playerGuess.style.display = "none";  //hides playerGuess input textbox
 }
