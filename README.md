@@ -1,6 +1,6 @@
 # 🎯 Guess the Number Game!
 
-A fun, interactive browser game where players try to guess a randomly chosen number between 1 and 99 — all within 7 attempts!
+A fun, interactive browser game where players try to guess a randomly chosen number between 1 and 99 — all within 7 attempts, enhanced with sound effects.
 
 ## 🕹️ Game Features
 
