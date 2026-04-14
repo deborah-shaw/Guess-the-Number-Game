@@ -4,12 +4,12 @@ A fun, interactive browser game where players try to guess a randomly chosen num
 
 ## 🕹️ Game Features
 
-- Random number generated each round
-- Player gets **7 attempts** to guess the correct number
-- Feedback after each guess: _"Too High"_ or _"Too Low"_
-- Tracks your **wins** and **losses**
-- Clean, responsive UI with playful fonts and background
-- Simple reset functionality to start a new round
+- 🎲 Random number generated each round
+- 🔢 Up to 7 attempts per game
+- 📉 Feedback after each guess: _"Too High"_ or _"Too Low"_
+- 🏆 Tracks your **wins** and **losses**
+- 🎨 Clean, responsive UI with playful fonts and background
+- 🔄 Simple reset functionality to start a new round
 
 ## 🚀 Live Demo
 
