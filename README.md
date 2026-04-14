@@ -52,7 +52,6 @@ This game uses:
 ## 📱 Compatibility
 
 Works on all modern browsers:
-
 - Chrome
 - Firefox
 - Edge
